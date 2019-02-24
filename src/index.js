@@ -1,35 +1,80 @@
-/* ESLINT 检查代码的三个方面
-  1. programmer errors
-  2. best practices
-  3. style issues
-*/
-
+console
+    .log(
+    'hello' +
+        "my" +
+"friend"
+    )
+;
+// import React, { Component } from 'react';
 // console
-//   .log(
-//     'hello'
-//     + 'my'
-//     + 'friend',
-//   );
+//     .log(
+//     'hello' +
+//         "my" +
+// "friend"
+//     )
+// ;
+// const test = 'hello world';
 
-// /* error type 1 */
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>hello</div>
+//     )
+//   }
+// }
+
+/** ********** programmer error */
+
+// const foo = bar;
+
 // for (let i = 0; i < 10; i--) {
-//     console.log(i);
+//   console.log(i);
 // }
 
-// /* error type 2 */
+// for (let i = 10; i >= 0; i++) {
+//   console.log(i);
+// }
+
+/** ********** best practices */
+
 // if ([] == false) {
-//     console.log('test');
+//   console.log('111');
+// } else {
+//   console.log('222');
+// }
+// if (3 == '03') {
+//   console.log('111');
+// } else {
+//   console.log('222');
 // }
 
-//----------------------------------
-/* error type 1 */
-for (let i = 0; i < 10; i--) {
-  console.log(i);
-}
+/** ********** style issue */
+// console
+//     .log(
+//     'hello' +
+//         "my" +
+// "friend"
+//     )
+// ;
 
-/* error type 2 */
-const test = [1, 2, 3, 4, 5];
-if ([] == false) {
-  test.push(7);
-}
-console.log("hello" + "my" + "friend");
+
+/** ********** rules modify example */
+
+// const bar = 10;
+// const work = Promise((resolve, reject) => {
+//   resolve('Some data');
+// });
+// work.then((data) => {
+//   console.log(data);
+// });
+
+// class App extends Component {
+//   componentDidMount() {
+//     console.log('test');
+//   }
+
+//   render() {
+//     return <div>hello</div>;
+//   }
+// }
+// export default App;
