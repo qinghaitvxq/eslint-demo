@@ -1,10 +1,16 @@
+
+import React, { Component } from 'react';
+
+const test = 'hello world';
+
 console
-    .log(
-    'hello' +
-        "my" +
-"friend"
-    )
-;
+  .log(
+    'hello'
+        + 'my'
++ 'friend',
+  );
+
+
 // import React, { Component } from 'react';
 // console
 //     .log(
@@ -37,12 +43,12 @@ console
 
 /** ********** best practices */
 
-// if ([] == false) {
+// if ([] === false) {
 //   console.log('111');
 // } else {
 //   console.log('222');
 // }
-// if (3 == '03') {
+// if (3 === '3') {
 //   console.log('111');
 // } else {
 //   console.log('222');
@@ -61,20 +67,20 @@ console
 /** ********** rules modify example */
 
 // const bar = 10;
-// const work = Promise((resolve, reject) => {
-//   resolve('Some data');
-// });
-// work.then((data) => {
-//   console.log(data);
-// });
+const work = Promise((resolve, reject) => {
+  resolve('Some data');
+});
+work.then((data) => {
+  console.log(data);
+});
 
-// class App extends Component {
-//   componentDidMount() {
-//     console.log('test');
-//   }
+class App extends Component {
+  componentDidMount() {
+    console.log('test');
+  }
 
-//   render() {
-//     return <div>hello</div>;
-//   }
-// }
-// export default App;
+  render() {
+    return <div>hello</div>;
+  }
+}
+export default App;
